@@ -20,11 +20,14 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/play1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'play1.html'));
 });
+
 app.get('/play2', function (req, res) {
-  res.send('This is Second play');
+  res.sendFile(path.join(__dirname, 'ui', 'play2.html'));
+
 });
+
 app.get('/play3', function (req, res) {
-  res.send('This is Third play');
+  res.sendFile(path.join(__dirname, 'ui', 'play3.html'));
 });
 
 
