@@ -18,13 +18,13 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/play1', function (req, res) {
-  res.sendFile('This is first play');
+  res.send('This is first play');
 });
 app.get('/play2', function (req, res) {
-  res.sendFile('This is Second play');
+  res.send('This is Second play');
 });
 app.get('/play3', function (req, res) {
-  res.sendFile('This is Third play');
+  res.send('This is Third play');
 });
 
 
