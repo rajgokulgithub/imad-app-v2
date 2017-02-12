@@ -81,6 +81,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/:playname', function (req, res) {
+    var playname =this.playname;
   res.send(createtemplate(plays[playname]));
 });
 
