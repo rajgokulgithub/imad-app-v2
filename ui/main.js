@@ -2,7 +2,7 @@ console.log('Loaded!');
 var img = document.getElementById('bomma');
 var marginLeft=0;
 img.onclick = function(){
-     var mes = document.getEelemntById("text");
+     var mes = document.getElemntById("text");
      mes.innerHTML = "What Have Done!!!!!!!";
      
      var inteval = setInterval(moveRight,50);
