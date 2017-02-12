@@ -84,6 +84,9 @@ app.get('/:play', function (req, res) {
    var play = req.params.play
   res.send(createtemplate(plays[play]));
 });
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 
 
 
