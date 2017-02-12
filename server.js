@@ -80,8 +80,8 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/:play', function (req, res) {
-  res.send(createtemplate(plays[play]));
+app.get('/:playname', function (req, res) {
+  res.send(createtemplate(plays[playname]));
 });
 
 
