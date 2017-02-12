@@ -3,6 +3,7 @@ body {
     background-color: white;
     color: blue; 
     margin-top: 75px;
+    margin: 0 auto;
 }
 
 .center {
@@ -20,11 +21,3 @@ body {
 .img-medium {
     height: 200px;
 }
-.container{
-               max-width:800px;
-               margin : 0 auto;
-               color : blue;
-               padding-top: 50px;
-               padding-left:15px;
-               padding-right:10px;
-           }
