@@ -1,6 +1,10 @@
 console.log('Loaded!');
 var img = document.getElementById('bomma');
 var marginLeft=0;
+function moveRight(){
+    marginLeft = marginLeft+10;
+    img.style.marginLeft = marginLeft+'px'
+}
 img.onclick = function(){
      var mes = document.getElementById("text");
      mes.innerHTML = "What Have You Done!!!!!!!";
@@ -8,7 +12,3 @@ img.onclick = function(){
      var inteval = setInterval(moveRight,50);
 };
 
-function moveRight(){
-    marginLeft = marginLeft+10;
-    img.style.marginLeft = marginLeft+'px'
-}
