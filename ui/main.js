@@ -6,7 +6,7 @@ img.onclick = function(){
      mes.innerHTML = "What Have Done!!!!!!!";
      
      var inteval = setInterval(moveRight,50);
-}
+};
 
 function moveRight(){
     marginLeft = marginLeft+10;
