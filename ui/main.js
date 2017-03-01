@@ -30,7 +30,7 @@ button.onclick= function(){
          }
     };
     
-    request.open("GET",'http://http://rajgokulgithub.imad.hasura-app.io/likes',true);
+    request.open("GET",'http://rajgokulgithub.imad.hasura-app.io/likes',true);
     request.send(null);
       
 };
