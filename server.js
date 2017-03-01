@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var plays = {
+/*var plays = {
     'play1':{
         title:'First Play',
         content:`<p>
@@ -68,7 +68,7 @@ function createtemplate(data)
 </html>`;
 return template;
 }
-app.get('/', function (req, res) {
+*/app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var counter =0;
