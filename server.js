@@ -69,7 +69,7 @@ function createtemplate(data)
 return template;
 }
 */
-var counter =0;
+var likes =0;
 app.get('/likes',function(req,res){
     likes=likes+1;
     res.send(likes.toString());
