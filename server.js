@@ -74,9 +74,24 @@ app.get('/likes',function(req,res){
     likes=likes+1;
     res.send(likes.toString());
 });
-
+var views =0;
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+    views=views+1;
+    res.send(views.toString());
+    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function(){
+         if(request.readyState==XMLHttpRequest.DONE)
+         {
+              if(request.status==200){
+                  var views = request.responseText;
+                  var span = document.getElementById('counter');
+                  span.innerHTML = views.toString(); 
+              }
+         }
+    };
+    request.open("GET",'http://rajgokulgithub.imad.hasura-app.io/views',true);
+    request.send(null);
 });
 
 app.get('/ui/style.css', function (req, res) {
