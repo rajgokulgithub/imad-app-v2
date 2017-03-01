@@ -16,7 +16,7 @@ img.onclick = function(){
 
 //likes for a pic 
 console.log('Loaded!');
-var button = document.getElementById('likes');
+/*var button = document.getElementById('likes');
 var likes = 0;
 button.onclick= function(){
       likes=likes+1;
