@@ -17,9 +17,20 @@ img.onclick = function(){
 //likes for a pic 
 console.log('Loaded!');
 var button = document.getElementById('likes');
-var likes = 0;
 button.onclick= function(){
-      likes=likes+1;
-      var span = document.getElementById('like');
-      span.innerHTML = likes.toString(); 
+  var request = new XMLRequest();
+    request.onreadystatechange = function(){
+         if(request.readystate===XMLRequest.DONE)
+         {
+              if(request.status===200){
+                  var likes = request.responseText;
+                  var span = document.getElementById('like');
+                  span.innerHTML = likes.toString(); 
+              }
+         }
+    };
+    
+    request.open("GET",'http://http://rajgokulgithub.imad.hasura-app.io/likes',true);
+    request.send(null);
+      
 };
