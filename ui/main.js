@@ -1,4 +1,5 @@
-console.log('Loaded!');
+// moving a image across the screen
+/*console.log('Loaded!');
 var img = document.getElementById('bomma');
 var marginLeft=0;
 function moveRight(){
@@ -11,4 +12,6 @@ img.onclick = function(){
      
      var inteval = setInterval(moveRight,50);
 };
+*/
 
+//likes for a pic 
