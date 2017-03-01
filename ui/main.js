@@ -18,9 +18,9 @@ img.onclick = function(){
 console.log('Loaded!');
 var button = document.getElementById('likes');
 button.onclick= function(){
-  var request = new XMLRequest();
+  var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
-         if(request.readystate===XMLRequest.DONE)
+         if(request.readystate===XMLhttpRequest.DONE)
          {
               if(request.status===200){
                   var likes = request.responseText;
