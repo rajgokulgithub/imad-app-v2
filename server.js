@@ -70,9 +70,9 @@ return template;
 }
 */
 var counter =0;
-app.get('/counter',function(req,res){
-    counter=counter+1;
-    res.send(counter.toString());
+app.get('/likes',function(req,res){
+    likes=likes+1;
+    res.send(likes.toString());
 });
 
 app.get('/', function (req, res) {
