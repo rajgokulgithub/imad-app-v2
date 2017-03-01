@@ -18,7 +18,7 @@ img.onclick = function(){
 var button = document.getElementById('likes');
 var likes = 0;
 button.onclick= function(){
-      likes=likes=1;
+      likes=likes+1;
       var span = document.getElementById('like');
       span.innerHTML = likes.toString(); 
 };
