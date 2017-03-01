@@ -20,9 +20,9 @@ var button = document.getElementById('likes');
 button.onclick= function(){
   var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
-         if(request.readystate===XMLhttpRequest.DONE)
+         if(request.readyState==XMLhttpRequest.DONE)
          {
-              if(request.status===200){
+              if(request.status==200){
                   var likes = request.responseText;
                   var span = document.getElementById('like');
                   span.innerHTML = likes.toString(); 
