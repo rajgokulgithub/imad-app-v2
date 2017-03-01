@@ -83,11 +83,12 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
+/*
 app.get('/:play', function (req, res) {
    var play = req.params.play
   res.send(createtemplate(plays[play]));
 });
+*/
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
