@@ -23,3 +23,4 @@ button.onclick= function(){
       var span = document.getElementById('like');
       span.innerHTML = likes.toString(); 
 };
+*/
